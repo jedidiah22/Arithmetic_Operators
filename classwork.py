@@ -32,7 +32,7 @@ class Physics:
         return work / time
 
 
-# Ask user for class and operation
+
 class_name = input("Enter 'math' or 'physics': ")
 operation_name = input(
     "Enter operation (add, subtract, multiply, divide, power for math; velocity, acceleration, force, work, power for physics): ")
@@ -46,7 +46,7 @@ else:
     print("Invalid class name")
     exit()
 
-# Call selected operation and print result
+
 if hasattr(calc, operation_name):
     operation = getattr(calc, operation_name)
     if operation_name == 'power':
